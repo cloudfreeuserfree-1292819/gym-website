@@ -263,3 +263,246 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.footer {
+    background-color: #ffffff; 
+    color: #040304;         
+    padding: 60px 0 20px;
+    margin-top: 40px;
+    border-top: 1px solid #e0dcd5;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #040304;  
+    margin-bottom: 10px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: #2c2c2c;      
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.footer-col h4 {
+    color: #040304;   
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #2c2c2c;          
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #d5a310;      
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0dcd5;
+    font-size: 13px;
+    color: #2c2c2c;
+    opacity: 0.7;
+}
+
+.dark-mode-btn {
+    background: transparent;
+    border: 2px solid #d5a310;
+    color: #292113;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.dark-mode-btn:hover {
+    background: #d5a310;
+    color: #040304;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero, .about, .features, .contact {
+    animation: fadeIn 1s ease-out;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f1f0eb;
+}
+
+body.dark-mode .header,
+body.dark-mode .hero,
+body.dark-mode .contact {
+    background-color: #222;
+}
+
+body.dark-mode .about,
+body.dark-mode .features {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .logo-text,
+body.dark-mode .hero-title,
+body.dark-mode .about-text h2,
+body.dark-mode .features-h1,
+body.dark-mode .contact-h1,
+body.dark-mode .footer-brand,
+body.dark-mode .footer-col h4 {
+    color: #f1f0eb;
+}
+
+body.dark-mode .nav a,
+body.dark-mode .hero-subtitle,
+body.dark-mode .about-text p,
+body.dark-mode .feature-card p,
+body.dark-mode .contact-subtitle,
+body.dark-mode .footer-tagline,
+body.dark-mode .footer-col ul li a,
+body.dark-mode .footer-bottom {
+    color: #ccc;
+}
+
+body.dark-mode .feature-card {
+    background-color: #333;
+}
+
+body.dark-mode .feature-card h3 {
+    color: #f1f0eb;
+}
+
+body.dark-mode .btn,
+body.dark-mode .btn-nav {
+    background-color: #d5a310;
+    color: #040304;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .btn-nav:hover {
+    background-color: #b8880c;
+}
+
+body.dark-mode .dark-mode-btn {
+    border-color: #d5a310;
+    color: #f1f0eb;
+}
+
+body.dark-mode .dark-mode-btn:hover {
+    background-color: #d5a310;
+    color: #040304;
+}
+
+body.dark-mode .footer {
+    background-color: #222;
+    border-top-color: #333;
+}
+
+body.dark-mode .footer-col ul li a:hover {
+    color: #d5a310;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #333;
+    border-color: #444;
+    color: #f1f0eb;
+}
+
+body.dark-mode .contact-form input:focus,
+body.dark-mode .contact-form textarea:focus {
+    border-color: #d5a310;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-text {
+        text-align: center;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .features-h1,
+    .contact-h1 {
+        font-size: 32px;
+    }
+    
+    .feature-card h3 {
+        font-size: 22px;
+    }
+    
+    .contact-form {
+        padding: 0 20px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .dark-mode-btn {
+        margin-left: 0;
+    }
+}
